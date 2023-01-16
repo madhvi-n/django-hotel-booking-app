@@ -1,5 +1,5 @@
 # Django Hotel Booking App
-Project using Django and Angular
+Project using Django
 
 # Dependencies
 > Python 3.8+
