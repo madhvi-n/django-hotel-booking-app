@@ -1,4 +1,9 @@
 # StayFinder - Your seamless solution for finding and booking the perfect stay! 🏨✨
+[![Python](https://img.shields.io/badge/Python-3.12-blue?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![Django](https://img.shields.io/badge/Django-5.1-brightgreen?style=flat&logo=django&logoColor=white)](https://www.djangoproject.com/)
+[![Django Rest Framework](https://img.shields.io/badge/Django_Rest_Framework-3.15-red?style=flat&logo=django&logoColor=white)](https://www.django-rest-framework.org/)
+[![Angular](https://img.shields.io/badge/Angular-19-blueviolet?style=flat&logo=angular&logoColor=white)](https://angular.io/)
+
 
 A **comprehensive hotel booking application**, designed to provide users with a seamless experience in finding and booking accommodations. StayFinder allows users to search, compare, and book hotels with ease, offering real-time availability, user reviews, and secure payments.
 
