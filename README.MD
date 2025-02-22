@@ -1,4 +1,4 @@
-# 🏨 StayFinder
+# StayFinder - Your seamless solution for finding and booking the perfect stay! 🏨✨
 
 A **comprehensive hotel booking application**, designed to provide users with a seamless experience in finding and booking accommodations. StayFinder allows users to search, compare, and book hotels with ease, offering real-time availability, user reviews, and secure payments.
 
