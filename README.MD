@@ -49,7 +49,7 @@ A **comprehensive hotel booking application**, designed to provide users with a 
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/stayfinder.git
+    git clone https://github.com/madhvi-n/stayfinder.git
     cd stayfinder
     ```
 
