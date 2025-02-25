@@ -1,7 +1,8 @@
-"""hotel_booking URL Configuration
+"""
+URL configuration for stayfinder project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/3.0/topics/http/urls/
+    https://docs.djangoproject.com/en/5.1/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -13,16 +14,29 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
 from django.urls import path, include, re_path
-from django.views.generic import TemplateView
 from django.conf.urls.static import static
 from django.conf import settings
+from .schema import schema_view
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name='home.html'), name='home'),
-    re_path(r'^rest-auth/', include('rest_auth.urls')),
-    re_path(r'^rest-auth/registration/', include('rest_auth.registration.urls')),
-    path('', include('profiles.urls')),
+    path("admin/", admin.site.urls),
+    path("dj-rest-auth/", include("dj_rest_auth.urls")),
+    path(
+        "dj-rest-auth/registration/", include("dj_rest_auth.registration.urls")
+    ),
+    path(
+        "api/swagger/",
+        schema_view.with_ui("swagger", cache_timeout=0),
+        name="swagger-docs",
+    ),
+    path(
+        "api/redoc/",
+        schema_view.with_ui("redoc", cache_timeout=0),
+        name="redoc-docs",
+    ),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

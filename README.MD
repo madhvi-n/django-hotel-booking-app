@@ -5,11 +5,13 @@ A **comprehensive hotel booking application**, designed to provide users with a 
 ## 🚀 Features
 
 ### **🔑 Authentication & User Management** (📝 To-Do)
+
 - User registration & login
 - Token-based authentication
 - Role-based access control
 
 ### **📦 Core Functionality** (📝 To-Do)
+
 - Search and book hotels
 - Filter by price, location, amenities, and ratings
 - Real-time room availability and pricing
@@ -19,10 +21,12 @@ A **comprehensive hotel booking application**, designed to provide users with a 
 - Responsive & mobile-friendly UI
 
 ### **📊 Admin Dashboard** (📝 To-Do)
+
 - Manage users, bookings, and settings
 - View reports and analytics
 
 ## 🔮 Future Considerations (📝 To-Do)
+
 - **💬 Customer Support Chat System** *(For queries and assistance)*
 - **🔎 Advanced Search & Filters** *(Additional sorting options)*
 - **🛠️ Integration with External APIs** *(Google Maps, Weather, etc.)*
@@ -37,12 +41,14 @@ A **comprehensive hotel booking application**, designed to provide users with a 
 ## ⚡ Installation
 
 1. **Clone the repository:**
+
     ```bash
     git clone https://github.com/your-username/stayfinder.git
     cd stayfinder
     ```
 
 2. **Set up a virtual environment:**
+
     ```bash
     python -m venv venv
     source venv/bin/activate  # For macOS/Linux
@@ -50,57 +56,48 @@ A **comprehensive hotel booking application**, designed to provide users with a 
     ```
 
 3. **Install dependencies:**
+
     ```bash
     pip install -r requirements.txt
     ```
 
 4. **Apply database migrations:**
+
     ```bash
     python manage.py migrate
     ```
 
 5. **Create a superuser (if applicable):**
+
     ```bash
     python manage.py createsuperuser
     ```
 
 6. **Run the development server:**
+
     ```bash
     python manage.py runserver
     ```
 
-7. **Access the application at:** `http://127.0.0.1:8000`
-
-## 🎯 Running Pre-commit Hooks (📝 To-Do)
-
-1. **Install pre-commit:**
-    ```bash
-    pip install pre-commit
-    ```
-
-2. **Set up the hooks:**
-    ```bash
-    pre-commit install && pre-commit install-hooks
-    ```
-
-3. **Run hooks manually for all files:**
-    ```bash
-    pre-commit run --all-files
-    ```
+    Access the application at: <http://127.0.0.1:8000>
 
 ## 📝 API Documentation
 
-- **Swagger UI:** `http://127.0.0.1:8000/swagger/`
-- **Redoc:** `http://127.0.0.1:8000/redoc/`
+The API documentation is available via **Swagger**:
+
+- **Swagger UI:** `http://127.0.0.1:8000/api/swagger/`
+- **Redoc:** `http://127.0.0.1:8000/api/redoc/`
 
 ## ⚙️ Environment Variables *(Example .env file)*
 
 ```ini
-SECRET_KEY=your_secret_key
+SECRET_KEY=django-secret-key
 DEBUG=True
-DATABASE_URL=your_database_url
-EXTERNAL_API_KEY=your_api_key
+DATABASE_NAME=db-name
+DATABASE_USER=db-user
+DATABASE_PASSWORD=db-password
+DATABASE_HOST=db-host
+DATABASE_PORT=5432
 ```
 
 ## 🎉 Happy Coding! 🚀
-
