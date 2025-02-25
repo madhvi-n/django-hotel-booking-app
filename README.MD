@@ -1,4 +1,4 @@
-# 🏨 StayFinder
+# StayFinder
 
 [![Django CI](https://github.com/madhvi-n/stay-finder/actions/workflows/django.yml/badge.svg?branch=main)](https://github.com/madhvi-n/stay-finder/actions/workflows/django.yml)
 [![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
